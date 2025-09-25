@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="exec_x">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0202165782712568 0.0269617445598185 -0.000306434428195451"
+        rpy="0 0 0" />
+      <mass
+        value="0.572567227319021" />
+      <inertia
+        ixx="0.0060819717584304"
+        ixy="-7.16739657840171E-05"
+        ixz="1.73398489453738E-05"
+        iyy="0.0103930693210033"
+        iyz="6.77394497102191E-06"
+        izz="0.00456894079490745" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec_x/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.635294117647059 0.635294117647059 0.635294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec_x/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="FR_link">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-16 -4.71844785465692E-16 0.0142359163867279"
+        rpy="0 0 0" />
+      <mass
+        value="0.0353051740660459" />
+      <inertia
+        ixx="6.45007391370766E-06"
+        ixy="-1.37642853928824E-21"
+        ixz="-2.71793958538617E-20"
+        iyy="6.45007391370766E-06"
+        iyz="7.23535406288491E-22"
+        izz="8.25699382219762E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec_x/meshes/FR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec_x/meshes/FR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="FR_joint"
+    type="continuous">
+    <origin
+      xyz="0.01 -0.164 0.015"
+      rpy="1.5708 0.18712 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FR_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+
+  <link
+    name="RR_link">
+    <inertial>
+      <origin
+        xyz="3.05311331771918E-16 -4.91794105439425E-16 0.0142359163867279"
+        rpy="0 0 0" />
+      <mass
+        value="0.0353051740660459" />
+      <inertia
+        ixx="6.45007391370766E-06"
+        ixy="-2.69991751937308E-21"
+        ixz="-1.66066464657482E-20"
+        iyy="6.45007391370767E-06"
+        iyz="-1.05690837343578E-21"
+        izz="8.25699382219762E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec_x/meshes/RR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec_x/meshes/RR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="RR_joint"
+    type="continuous">
+    <origin
+      xyz="-0.09 -0.1643 0.015"
+      rpy="1.5708 0.082421 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+
+  <link
+    name="FL_link">
+    <inertial>
+      <origin
+        xyz="6.93889390390723E-16 -5.13478148889135E-16 0.0142359163867279"
+        rpy="0 0 0" />
+      <mass
+        value="0.0353051740660459" />
+      <inertia
+        ixx="6.45007391370766E-06"
+        ixy="-1.90582413132223E-21"
+        ixz="-2.06954852347706E-20"
+        iyy="6.45007391370766E-06"
+        iyz="2.99890769790968E-21"
+        izz="8.25699382219762E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec_x/meshes/FL_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec_x/meshes/FL_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="FL_joint"
+    type="continuous">
+    <origin
+      xyz="0.01 0.164 0.015"
+      rpy="1.5708 1.2344 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="FL_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+
+  <link
+    name="RL_link">
+    <inertial>
+      <origin
+        xyz="3.60822483003176E-16 -4.55364912443912E-16 0.0142359163867282"
+        rpy="0 0 0" />
+      <mass
+        value="0.0353051740660459" />
+      <inertia
+        ixx="6.45007391370766E-06"
+        ixy="-2.85873619698326E-21"
+        ixz="-4.43243350252555E-21"
+        iyy="6.45007391370767E-06"
+        iyz="6.71482438376624E-21"
+        izz="8.25699382219762E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec_x/meshes/RL_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec_x/meshes/RL_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="RL_joint"
+    type="continuous">
+    <origin
+      xyz="-0.09 0.1643 0.015"
+      rpy="1.5708 -0.082421 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="RL_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+
+  	<link name="laser_link">
+    <inertial>
+      <origin
+        xyz="-0.017309 -0.00039036 0.5"
+        rpy="0 0 0" />
+      <mass
+        value="0.047631" />
+      <inertia
+        ixx="1.1805E-05"
+        ixy="1.2065E-21"
+        ixz="-3.5764E-21"
+        iyy="1.061E-05"
+        iyz="-8.9479E-22"
+        izz="1.0463E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec/mesh/rp_lidar_meshmixer.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.7451 0.7451 0.7451 1" />
+      </material>
+    </visual>
+        <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exec/mesh/rp_lidar_meshmixer.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="laser_joint" type="fixed">
+    <origin xyz="-0.13309 -0.00039036 0.8999" rpy="0 0 0" />
+    <parent link="base_link"/>
+    <child link="laser_link" />
+  </joint>
+  <gazebo reference="laser_link">
+    <material>Gazebo/Blue</material>
+    <turnGravityOff>false</turnGravityOff>
+    <sensor type="ray" name="laser_link">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>40</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14</min_angle>
+            <max_angle>3.14</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>12.0</max>
+          <resolution>0.001</resolution>
+        </range>
+      </ray>
+      
+      <plugin name="lasser_sensor_plugin" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName>
+        <frameName>laser_link</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  	<gazebo>
+  	<plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+	    <legacyMode>true</legacyMode>
+	    <rosDebugLevel>Debug</rosDebugLevel>
+	    <publishWheelTF>false</publishWheelTF>
+	    <robotNamespace>/</robotNamespace>
+	    <publishTf>1</publishTf>
+	    <publishWheelJointState>false</publishWheelJointState>
+	    <alwaysOn>true</alwaysOn>
+	    <updateRate>100.0</updateRate>
+	    <leftJoint>FL_joint</leftJoint>
+	    <rightJoint>FR_joint</rightJoint>
+	    <wheelSeparation>0.328</wheelSeparation>
+	    <wheelDiameter>0.088</wheelDiameter>
+	    <broadcastTF>1</broadcastTF>
+	    <wheelTorque>30</wheelTorque>
+	    <wheelAcceleration>1.8</wheelAcceleration>
+	    <commandTopic>cmd_vel</commandTopic>
+	    <odometryFrame>odom</odometryFrame> 
+	    <odometryTopic>odom</odometryTopic> 
+	    <robotBaseFrame>base_link</robotBaseFrame>
+   </plugin>
+  </gazebo> 
+
+</robot>
