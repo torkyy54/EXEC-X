@@ -50,5 +50,5 @@ The robot integrates **sensors, actuators, and embedded systems** to perform rea
 
 ---
 
-## 📸 Demo
+## 📸 CAD Render
 ![Robot CAD Model](media/Exec-X.jpeg)
